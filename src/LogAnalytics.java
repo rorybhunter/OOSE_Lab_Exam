@@ -12,7 +12,7 @@ public class LogAnalytics
 		System.out.println("Logging:" +newCoordinates.toString());
 	}
 
-	public static LogAnalytics getLogAnalytics()
+	public synchronized static LogAnalytics getLogAnalytics()
 	{
 		if (logAnalytics == null)
 		{
