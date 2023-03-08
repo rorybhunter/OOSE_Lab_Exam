@@ -1,10 +1,12 @@
 import java.util.ArrayList;
+import java.util.List;
 
-public class PlayerLocation 
+public class PlayerLocation implements Subject
 {
 	private Coordinates playerCoordinates;
 	private int northSouthBoundary;
 	private int eastWestBoundary;
+	private List<Observer> observers;
 
 	
 	public PlayerLocation(int northSouthBoundary, int eastWestBoundary)
@@ -19,6 +21,7 @@ public class PlayerLocation
 		if (updateCoordinates.getNorthSouth() >= 0 && updateCoordinates.getNorthSouth() <= northSouthBoundary && updateCoordinates.getEastWest()>=0 && updateCoordinates.getEastWest()<=eastWestBoundary)
 		{
 			playerCoordinates = updateCoordinates;
+			notifyObserver();
 			System.out.println("You are at location:" + playerCoordinates.toString());
 		}
 		else 
@@ -27,4 +30,21 @@ public class PlayerLocation
 		}
 	}	
 
+	public void registerObserver(Observer observer)
+	{
+		observers.add(observer);
+	}
+
+	public void removeObserver(Observer observer)
+	{
+		observers.remove(observer);
+	}
+
+	public void notifyObserver()
+	{
+		for (Observer observer : observers)
+		{
+			observer.update(this.playerCoordinates);
+		}
+	}
 }
