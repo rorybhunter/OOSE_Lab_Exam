@@ -1,5 +1,5 @@
 
-public abstract class Encounter{
+public abstract class Encounter implements Observer{
 	
 	Coordinates encounterCoordinates;
 	String name;
@@ -10,4 +10,8 @@ public abstract class Encounter{
 		System.out.println(name + " "+ encounterCoordinates.toString());
 	}
 
+	public void update(Coordinates coordinates)
+	{
+
+	}
 }

@@ -28,6 +28,7 @@ public class PlayerLocation implements Subject
 		{
 			System.out.println("Out of bounds move attempted - position has not changed, you are at:" + playerCoordinates.toString());
 		}
+		LogAnalytics.getLogAnalytics().logMove(playerCoordinates);
 	}	
 
 	public void registerObserver(Observer observer)
