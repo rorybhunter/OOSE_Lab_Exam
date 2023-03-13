@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5f171cf3-71c4-4aec-a4e6-9cf16031f268" name="Changes" comment="created encounters. need to make factory">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="5f171cf3-71c4-4aec-a4e6-9cf16031f268" name="Changes" comment="created encounters and encounter factory" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -90,7 +88,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678397795375</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="created encounters and encounter factory">
+      <created>1678458575953</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1678458575953</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -101,6 +106,7 @@
     <MESSAGE value="LogAnalytics follows the singleton pattern" />
     <MESSAGE value="sync getLog" />
     <MESSAGE value="created encounters. need to make factory" />
-    <option name="LAST_COMMIT_MESSAGE" value="created encounters. need to make factory" />
+    <MESSAGE value="created encounters and encounter factory" />
+    <option name="LAST_COMMIT_MESSAGE" value="created encounters and encounter factory" />
   </component>
 </project>
