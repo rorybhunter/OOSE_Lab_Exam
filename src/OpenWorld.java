@@ -2,13 +2,11 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Random;
 
-import javax.management.loading.PrivateClassLoader;
-
 public class OpenWorld {
 	
 	private int northSouthBoundary, eastWestBoundary; 
 	private Player player;
-	private ArrayList<Encounter> encounters = new ArrayList<Encounter>();
+	private ArrayList<Encounter> encounters = new ArrayList<>();
 	public boolean gameOver = false;
 	
 	
@@ -29,8 +27,7 @@ public class OpenWorld {
 	}
 
 	private void createEncounters(){
-		String[] s = new String[] {"Wolf", "Lake", "Flatlands", "Finish Point"};
-		ArrayList<String> encounterStrings = new ArrayList<String>(Arrays.asList("Wolf", "Lake", "Flatlands", "FinishPoint"));
+		ArrayList<String> encounterStrings = new ArrayList<>(Arrays.asList("Wolf", "Lake", "Flatlands", "FinishPoint"));
 		Random rand = new Random();
 		for (int i=0; i<=eastWestBoundary; i++){
 			for (int j=0; j<=northSouthBoundary; j++){
@@ -42,7 +39,7 @@ public class OpenWorld {
 	}
 	
 	private void playerMove(int northSouthChange, int eastWestChange) {
-		if (gameOver == false) {
+		if (!gameOver) {
 
 			player.getPlayerLocation().changeCoordinates(new Coordinates(player.getPlayerLocation().getPlayerCoordinates().getNorthSouth() + northSouthChange,
 					player.getPlayerLocation().getPlayerCoordinates().getEastWest() + eastWestChange));
