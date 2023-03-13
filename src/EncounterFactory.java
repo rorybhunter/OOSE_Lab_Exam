@@ -3,7 +3,7 @@ public class EncounterFactory {
         switch (type) {
             case "Flatlands":
                 return new Flatlands(type, coordinates);
-            case "Finish point":
+            case "FinishPoint":
                 return new FinishPoint(type, coordinates);
             case "Wolf":
                 return new Wolf(type, coordinates);

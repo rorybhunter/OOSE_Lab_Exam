@@ -6,14 +6,14 @@ public class PlayerLocation implements Subject
 	private Coordinates playerCoordinates;
 	private int northSouthBoundary;
 	private int eastWestBoundary;
-	private List<Observer> observers;
+	private ArrayList<Observer> observers;
 
 	
 	public PlayerLocation(int northSouthBoundary, int eastWestBoundary)
 	{
 		this.northSouthBoundary = northSouthBoundary;
 		this.eastWestBoundary = eastWestBoundary;
-		
+		this.observers = new ArrayList<Observer>();
 	}
 		
 	public void changeCoordinates(Coordinates updateCoordinates)
@@ -41,11 +41,17 @@ public class PlayerLocation implements Subject
 		observers.remove(observer);
 	}
 
-	public void notifyObserver()
-	{
-		for (Observer observer : observers)
-		{
-			observer.update(this.playerCoordinates);
+	public void notifyObserver() {
+		if (!observers.isEmpty()) {
+
+
+			for (Observer observer : observers) {
+				observer.update(this.playerCoordinates);
+			}
 		}
+	}
+
+	public Coordinates getPlayerCoordinates() {
+		return playerCoordinates;
 	}
 }

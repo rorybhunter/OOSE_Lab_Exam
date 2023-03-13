@@ -6,6 +6,5 @@ public class Wolf extends Encounter{
         this.nearbyAlert = "hear distant howling.";
         this.encounterDetails = "You are attacked by wolves and take 20 damage!";
         // implement actual damage here!
-
     }
 }
