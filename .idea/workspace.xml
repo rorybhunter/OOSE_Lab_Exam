@@ -4,11 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5f171cf3-71c4-4aec-a4e6-9cf16031f268" name="Changes" comment="comment">
-      <change afterPath="$PROJECT_DIR$/src/Player.java" afterDir="false" />
+    <list default="true" id="5f171cf3-71c4-4aec-a4e6-9cf16031f268" name="Changes" comment="Openworld">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReadMe.md" beforeDir="false" afterPath="$PROJECT_DIR$/ReadMe.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Encounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Encounter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/EncounterFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EncounterFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FinishPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FinishPoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Flatlands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Flatlands.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lake.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lake.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/OpenWorld.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OpenWorld.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PlayerLocation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PlayerLocation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Wolf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wolf.java" afterDir="false" />
     </list>
@@ -123,7 +128,21 @@
       <option name="project" value="LOCAL" />
       <updated>1678701954691</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Openworld">
+      <created>1678705460179</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1678705460179</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Openworld">
+      <created>1678705598647</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1678705598647</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -158,6 +177,7 @@
     <MESSAGE value="created encounters. need to make factory" />
     <MESSAGE value="created encounters and encounter factory" />
     <MESSAGE value="comment" />
-    <option name="LAST_COMMIT_MESSAGE" value="comment" />
+    <MESSAGE value="Openworld" />
+    <option name="LAST_COMMIT_MESSAGE" value="Openworld" />
   </component>
 </project>

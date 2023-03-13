@@ -6,11 +6,14 @@ public abstract class Encounter implements Observer{
 	String nearbyAlert;
 	String encounterDetails;
 	Coordinates playerCoordinates;
+	Player player;
 
-	public Encounter(String name, Coordinates coordinates)
+	public Encounter(String name, Coordinates coordinates, Player player)
 	{
+		player.getPlayerLocation().registerObserver(this);
 		this.name = name;
 		this.encounterCoordinates = coordinates;
+		this.player = player;
 	}
 
 
@@ -31,15 +34,13 @@ public abstract class Encounter implements Observer{
 	public void update(Coordinates coordinates)
 	{
 		this.playerCoordinates = coordinates;
+		if (playerCoordinates.isHere(encounterCoordinates)){
+			printEncounterDetails();
+		}
 	}
 
 	public void setNearbyAlert(String newNearbyAlert)
 	{
 		this.nearbyAlert = newNearbyAlert;
 	}
-
-
-
-
-
 }

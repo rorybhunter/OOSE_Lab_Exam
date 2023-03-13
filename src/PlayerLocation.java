@@ -21,8 +21,8 @@ public class PlayerLocation implements Subject
 		if (updateCoordinates.getNorthSouth() >= 0 && updateCoordinates.getNorthSouth() <= northSouthBoundary && updateCoordinates.getEastWest()>=0 && updateCoordinates.getEastWest()<=eastWestBoundary)
 		{
 			playerCoordinates = updateCoordinates;
-			notifyObserver();
 			System.out.println("You are at location:" + playerCoordinates.toString());
+			notifyObserver();
 		}
 		else 
 		{
@@ -31,10 +31,7 @@ public class PlayerLocation implements Subject
 		LogAnalytics.getLogAnalytics().logMove(playerCoordinates);
 	}	
 
-	public void registerObserver(Observer observer)
-	{
-		observers.add(observer);
-	}
+	public void registerObserver(Observer observer) { observers.add(observer); }
 
 	public void removeObserver(Observer observer)
 	{
@@ -43,8 +40,6 @@ public class PlayerLocation implements Subject
 
 	public void notifyObserver() {
 		if (!observers.isEmpty()) {
-
-
 			for (Observer observer : observers) {
 				observer.update(this.playerCoordinates);
 			}

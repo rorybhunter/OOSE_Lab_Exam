@@ -21,7 +21,7 @@ public class OpenWorld {
 		this.eastWestBoundary = eastWestBoundary;
 		this.northSouthBoundary=northSouthBoundary;
 
-		this.player = new Player(eastWestBoundary, northSouthBoundary); // creates a new player and sets their playerLocation to 0,0
+		this.player = new Player(eastWestBoundary, northSouthBoundary, this); // creates a new player and sets their playerLocation to 0,0
 		createEncounters();
 		System.out.println("---------------------------");
 	}
@@ -32,7 +32,7 @@ public class OpenWorld {
 		for (int i=0; i<=eastWestBoundary; i++){
 			for (int j=0; j<=northSouthBoundary; j++){
 				String randomEncounter = encounterStrings.get(rand.nextInt(encounterStrings.size()));
-				Encounter e = EncounterFactory.createEncounter(randomEncounter,new Coordinates(j,i));
+				Encounter e = EncounterFactory.createEncounter(randomEncounter,new Coordinates(j,i), player);
 				encounters.add(e);
 			}
 		}
@@ -51,7 +51,7 @@ public class OpenWorld {
 
 	public void setGameOver(){
 		gameOver = true;
-		System.out.println("The game has ended :(");
+		System.out.println("The game has ended");
 	}
 	
 
