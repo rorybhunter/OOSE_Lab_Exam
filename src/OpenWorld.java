@@ -78,7 +78,7 @@ public class OpenWorld {
 
 		OpenWorld world = new OpenWorld();
 		world.initialise(2,2);
-		world.playerMove(-21,0);
+		world.playerMove(1,0);
 		world.playerMove(0,1);
 	}
 
