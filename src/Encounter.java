@@ -31,6 +31,12 @@ public abstract class Encounter implements Observer{
 		this.encounterDetails = newEncounterDetails;
 	}
 
+	public String getEncounterDetails()
+	{
+		return this.encounterDetails;
+	}
+
+
 	public void update(Coordinates coordinates)
 	{
 		this.playerCoordinates = coordinates;
@@ -43,4 +49,6 @@ public abstract class Encounter implements Observer{
 	{
 		this.nearbyAlert = newNearbyAlert;
 	}
+
+	public String getNearbyAlert(){ return this.nearbyAlert;}
 }

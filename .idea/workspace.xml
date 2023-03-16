@@ -4,10 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5f171cf3-71c4-4aec-a4e6-9cf16031f268" name="Changes" comment="updated encounters">
+    <list default="true" id="5f171cf3-71c4-4aec-a4e6-9cf16031f268" name="Changes" comment="added nearbyalert">
+      <change afterPath="$PROJECT_DIR$/uml.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReadMe.md" beforeDir="false" afterPath="$PROJECT_DIR$/ReadMe.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Encounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Encounter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lake.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lake.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/OpenWorld.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OpenWorld.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PlayerLocation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PlayerLocation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wolf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wolf.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +24,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="editable-svg" />
       </list>
     </option>
   </component>
@@ -141,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678709756725</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="added nearbyalert">
+      <created>1678710780745</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1678710780745</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -178,6 +191,7 @@
     <MESSAGE value="comment" />
     <MESSAGE value="Openworld" />
     <MESSAGE value="updated encounters" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated encounters" />
+    <MESSAGE value="added nearbyalert" />
+    <option name="LAST_COMMIT_MESSAGE" value="added nearbyalert" />
   </component>
 </project>

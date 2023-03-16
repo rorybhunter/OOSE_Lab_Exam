@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.List;
 
 public class PlayerLocation implements Subject
 {
@@ -32,9 +31,6 @@ public class PlayerLocation implements Subject
 		LogAnalytics.getLogAnalytics().logMove(playerCoordinates);
 	}	
 
-	public void printSurroundings(){
-
-	}
 	public void registerObserver(Observer observer) { observers.add(observer); }
 
 	public void removeObserver(Observer observer)

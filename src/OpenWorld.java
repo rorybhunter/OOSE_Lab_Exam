@@ -10,10 +10,7 @@ public class OpenWorld {
 	public boolean gameOver = false;
 	
 	
-	public OpenWorld()
-	{
-
-	}
+	public OpenWorld() {}
 	
 	
 	private void initialise(int eastWestBoundary, int northSouthBoundary)
@@ -31,9 +28,9 @@ public class OpenWorld {
 		ArrayList<String> encounterStrings = new ArrayList<>(Arrays.asList("Wolf", "Lake", "Flatlands", "FinishPoint"));
 		Random rand = new Random();
 		for (int i=0; i<=eastWestBoundary; i++){
-			for (int j=0; j<=northSouthBoundary; j++){
+			for (int j=0; j<=northSouthBoundary; j++) {
 				String randomEncounter = encounterStrings.get(rand.nextInt(encounterStrings.size()));
-				Encounter e = EncounterFactory.createEncounter(randomEncounter,new Coordinates(j,i), player);
+				Encounter e = EncounterFactory.createEncounter(randomEncounter, new Coordinates(j, i), player);
 				encounters.add(e);
 			}
 		}
@@ -53,6 +50,8 @@ public class OpenWorld {
 	public void printSurroundings(){
 		String[] nearby = new String[] {"Nothing to the North","Nothing to the East","Nothing to the South","Nothing to the West", };
 		for (Encounter encounter : encounters) {
+
+			// if player is to the south of encounter: encounter is to the north.
 			if (player.getPlayerLocation().getPlayerCoordinates().isSouth(encounter.encounterCoordinates)) {
 				nearby[0] = "To the North: " + encounter.nearbyAlert;
 			} else if (player.getPlayerLocation().getPlayerCoordinates().isWest(encounter.encounterCoordinates)) {
@@ -71,17 +70,14 @@ public class OpenWorld {
 		gameOver = true;
 		System.out.println("The game has ended");
 	}
-	
 
 	public static void main(String[]args)
 	{
 
 		OpenWorld world = new OpenWorld();
 		world.initialise(2,2);
-		world.playerMove(1,0);
+		world.playerMove(-21,0);
 		world.playerMove(0,1);
-		
-		
 	}
 
 }
