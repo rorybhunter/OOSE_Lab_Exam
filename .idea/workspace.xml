@@ -6,13 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="5f171cf3-71c4-4aec-a4e6-9cf16031f268" name="Changes" comment="added nearbyalert">
       <change afterPath="$PROJECT_DIR$/uml.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vpproject/OOSE_Lab_Exam.vpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReadMe.md" beforeDir="false" afterPath="$PROJECT_DIR$/ReadMe.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Encounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Encounter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Lake.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lake.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Coordinates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Coordinates.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/OpenWorld.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OpenWorld.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PlayerLocation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PlayerLocation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Wolf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wolf.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,7 +151,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678710780745</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="added nearbyalert">
+      <created>1678994456997</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1678994456997</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">

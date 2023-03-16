@@ -51,14 +51,4 @@ public class Coordinates {
 	{
 		return "North-South grid location: "+northSouth + " East-West grid location: "+ eastWest; 
 	}
-
-	public void changeNorthSouth(int northSouthChange) {
-		northSouth+=northSouthChange;
-	}
-
-	public void changeEatstWest(int eastWestChange) {
-		eastWest+=eastWestChange;
-		
-	}
-
 }

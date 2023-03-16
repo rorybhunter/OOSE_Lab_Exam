@@ -7,7 +7,7 @@ public class OpenWorld {
 	private int northSouthBoundary, eastWestBoundary; 
 	private Player player;
 	private ArrayList<Encounter> encounters = new ArrayList<>();
-	public boolean gameOver = false;
+	private boolean gameOver = false;
 	
 	
 	public OpenWorld() {}
@@ -48,6 +48,9 @@ public class OpenWorld {
 	}
 
 	public void printSurroundings(){
+		if (this.gameOver == true){
+			return;
+		}
 		String[] nearby = new String[] {"Nothing to the North","Nothing to the East","Nothing to the South","Nothing to the West", };
 		for (Encounter encounter : encounters) {
 
