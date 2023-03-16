@@ -73,7 +73,6 @@ public class OpenWorld {
 		gameOver = true;
 		System.out.println("The game has ended");
 	}
-
 	public static void main(String[]args)
 	{
 
